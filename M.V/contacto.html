@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de contacto para consultas y soporte sobre videojuegos.">
+    <link rel="stylesheet" href="contacto.css">
+    <title>Contacto</title>
+    
+</head>
+<body>
+ <nav>
+        <a href="impacto.html">Impacto</a>
+        <a href="juegos.html" >Juegos</a>
+        <a href="index.html">Inicio</a>
+        <a href="historia.html">Historia</a>
+        <a href="desarrollo.html">Desarrollo</a>
+        <a href="contacto.html" class="active">Contacto</a>
+    </nav>
+
+
+    <h1>Contacto</h1>
+    <p>¿Tienes alguna consulta o sugerencia sobre videojuegos? Completa el siguiente formulario:</p>
+    <form action="#" method="post">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="email">Correo electrónico:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="tema">Tema de consulta:</label><br>
+        <select id="tema" name="tema" required>
+            <option value="">Selecciona una opción</option>
+            <option value="sugerencia">Sugerencia de videojuego</option>
+            <option value="problema">Problema técnico</option>
+            <option value="informacion">Solicitar información</option>
+        </select><br><br>
+
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
